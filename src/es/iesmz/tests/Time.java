@@ -23,7 +23,7 @@ public class Time {
     }
 
     public boolean equals(Object tiempo) {
-        if (tiempo instanceof Time) {
+        if (tiempo instanceof Time && ((Time) tiempo).hora == this.hora && ((Time) tiempo).minuto == this.minuto && ((Time) tiempo).segundo == this.segundo) {
             return true;
         } else {
             return false;
